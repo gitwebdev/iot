@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>RPC : JavaScript to python</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		Brocker Adress : http: // <input type="text" id="brockerName" /> : <input type="text" id="brockerPort" /> 
+		<input type="button" value="Connect" onClick="brocker_connection()"/><br/><br/>
+		Message : <input type="text" id="Message" /> 
+		Queue : <input type="text" id="Queue_producer" /> 
+		<input type="button" value="Send" onClick="send_message()" /><br/>
+		Message : <input type="text" id="Result" value="...." />
+		Queue : <input type="text" id="Queue_consumer" />
+		<input type="button" value="Read" onClick="read_message()" />	
+	</body>
+	<script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
+	<script src="js/stomp.js"></script>
+	<script src="js/rpc.old.js" type="text/javascript"></script>
+</html>
